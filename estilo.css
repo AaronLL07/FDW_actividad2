@@ -1,5 +1,67 @@
-.info
-        {
-            background-color: rgb(243, 215, 238);
-            color:rgb(28, 96, 96);
-        }
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background: rgb(255, 128, 128);
+    color: #ffe7ca;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Habilita Flexbox para la navegación */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+nav ul li a {
+    color: #333; /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* Fondo blanco para las secciones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Figuras */
+figure {
+    text-align: center; /* Centra la figura y el pie de foto */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries para diseño responsivo */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block; /* Cambia a bloque en pantallas pequeñas */
+        margin-bottom: 10px; /* Espacio entre enlaces en bloque */
+    }
+
+    section {
+        margin: 10px; /* Reduce el margen en pantallas pequeñas */
+        padding: 10px; /* Reduce el relleno en pantallas pequeñas */
+    }
+}
