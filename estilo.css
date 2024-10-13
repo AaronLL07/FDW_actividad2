@@ -1,78 +1,180 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6; /* Mejora la legibilidad del texto */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
-    background-color: #f4f4f4; /* Color de fondo de la página */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 /* Encabezado */
 header {
-    background: rgb(255, 128, 128); /* Color de fondo del encabezado */
-    color: #ffe7ca; /* Color del texto del encabezado */
-    padding: 10px 0; /* Espaciado vertical en el encabezado */
-    text-align: center; /* Centra el texto del encabezado */
+    background: rgb(255, 128, 128);
+    color: #ffe7ca;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Estilos para la navegación */
 nav {
-    background-color: #333; /* Color de fondo de la barra de navegación */
+    background-color: #333;
 }
 
 nav ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
-    display: flex; /* Habilita Flexbox para la barra horizontal */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 nav li {
-    flex: 1; /* Cada elemento ocupa el mismo espacio */
+    flex: 1;
 }
 
 nav a {
-    display: block; /* Hace que el enlace ocupe todo el espacio del elemento li */
-    padding: 14px; /* Espaciado interno para los enlaces */
-    color: white; /* Color del texto de los enlaces */
-    text-align: center; /* Centra el texto dentro del enlace */
-    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: block;
+    padding: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #575757; /* Color de fondo al pasar el ratón sobre el enlace */
+    background-color: #575757;
 }
 
 /* Secciones */
 section {
-    margin: 20px; /* Margen alrededor de las secciones */
-    padding: 20px; /* Relleno dentro de las secciones */
-    background-color: white; /* Fondo blanco para las secciones */
-    border-radius: 5px; /* Bordes redondeados para un aspecto moderno */
+    margin: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introTop {
+    margin: 0 20px; /* Ajusta el valor según sea necesario */
+}
+
+.introForm {
+    margin: 0 20px; /* Ajusta el valor según sea necesario */
 }
 
 /* Figuras */
 figure {
-    text-align: center; /* Centra la figura y el pie de foto */
+    margin: 20px auto;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #555;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    background-color: #333;
+    color: white;
+}
+
+/* Glosario */
+dl {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fafafa;
+    border-left: 4px solid rgb(37, 41, 45);
+}
+
+dt {
+    font-weight: bold;
+    color: #333;
+}
+
+dd {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #555;
+}
+
+/* Multimedia */
+audio,
+embed {
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botón "Volver a arriba" */
+a[href="#inicio"] {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(33, 36, 40);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a[href="#inicio"]:hover {
+    background-color: #2f383e; 
 }
 
 /* Pie de página */
 footer {
-    background-color: #333; /* Color de fondo del pie de página */
-    color: white; /* Color del texto del pie de página */
-    text-align: center; /* Centra el texto en el pie de página */
-    padding: 10px 0; /* Espaciado vertical en el pie de página */
+   background-color:#333; 
+   color:white; 
+   text-align:center; 
+   padding:.625rem; 
 }
 
-/* Media Queries para diseño responsivo */
-@media screen and (max-width: 600px) {
-    nav ul li {
-        display: block; /* Cambia a bloque en pantallas pequeñas */
-        margin-bottom: 10px; /* Espacio entre enlaces en bloque */
-    }
+/* Diseño responsivo */
+@media screen and (max-width :600px) {
+   h1,
+   h2,
+   h3 {
+       font-size :1.5em; 
+   }
 
-    section {
-        margin: 10px; /* Reduce el margen en pantallas pequeñas */
-        padding: 10px; /* Reduce el relleno en pantallas pequeñas */
-    }
+   table,
+   audio,
+   embed {
+       width :100%; 
+   }
+
+   nav ul {
+       flex-direction :column; 
+   }
+
+   nav a {
+       margin-bottom :10 px; 
+   }
+
+   section {
+       margin :10 px; 
+       padding :10 px; 
+   }
 }
