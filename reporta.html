@@ -21,7 +21,7 @@
         </div>
 
         <section>
-            <form action="">
+            <form id="formulario" action="">
                 <fieldset>
                     <legend>Datos personales</legend>
                     <label for="nombre">Nombre:</label>
@@ -71,10 +71,10 @@
 
                     <input type="radio" id="contactMail" name="contactMethod" value="mail">
                     <label for="contactMail">Correo postal</label><br>
+                    <button type="submit" id="botonEnviar">Enviar</button>
                 </fieldset>
-
-                <button type="submit">Enviar</button>
             </form>
+            <div id="mensaje-container"></div>
         </section>
 
         <section>
@@ -98,5 +98,6 @@
 
         </address>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
