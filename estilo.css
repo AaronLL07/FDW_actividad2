@@ -59,6 +59,12 @@ section {
     margin: 0 20px; /* Ajusta el valor según sea necesario */
 }
 
+.mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 /* Figuras */
 figure {
     margin: 20px auto;
